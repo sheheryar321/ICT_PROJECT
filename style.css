@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0c0918;
+    color: white;
+}
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #100c20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    font-size: 27px;
+    font-weight: 800;
+    color: #a78bfa;
+}
+#reference{
+    text-decoration: none;
+}
+.nav-links a{
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: #a78bfa;
+}
+.nav-button{
+    background: #8055e8;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+}
+/* Hero Section */
+.hero{
+    min-height: 570px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:
+        radial-gradient(circle at 80% 50%, #39206d, transparent 35%),
+        linear-gradient(120deg, #100c20, #19102f);
+}
+.hero-content{
+    max-width: 650px;
+}
+.tagline{
+    color: #a78bfa;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.hero h1{
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+.hero h1 span,.section-heading h2 span,.about h2 span{
+    color: #a78bfa;
+}
+.hero-text{
+    color: #bbb4cf;
+    line-height: 1.9;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+.main-button{
+    display: inline-block;
+    background: linear-gradient(90deg, #8055e8, #b16cea);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.main-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px #8055e888;
+}
+.music-icon{
+    font-size: 160px;
+    filter: drop-shadow(0 0 35px #a78bfa);
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+/* Mood Section */
+.moods{
+    padding: 90px 8%;
+    text-align: center;
+}
+.section-heading{
+    margin-bottom: 45px;
+}
+.section-heading h2,.about h2{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.section-heading p:last-child{
+    color: #aaa2bd;
+}
+.mood-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.mood-card{
+    padding: 30px 15px;
+    border-radius: 18px;
+    background: #19132b;
+    border: 1px solid #302449;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mood-card:hover{
+    transform: translateY(-12px);
+    border-color: #a78bfa;
+    box-shadow: 0 10px 30px #8055e833;
+}
+.emoji{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.mood-card h3{
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.mood-card p{
+    color: #aaa2bd;
+    font-size: 12px;
+}
+/* Mood Card Colors */
+.happy{
+    background: linear-gradient(145deg, #30251c, #19132b);
+}
+.sad {
+    background: linear-gradient(145deg, #172c46, #19132b);
+}
+.chill{
+    background: linear-gradient(145deg, #193c3d, #19132b);
+}
+.energetic{
+    background: linear-gradient(145deg, #482019, #19132b);
+}
+.romantic{
+    background: linear-gradient(145deg, #461d38, #19132b);
+}
+/* Recommendations */
+.recommendations{
+    padding: 80px 8%;
+    background: #120e20;
+    text-align: center;
+}
+#heading {
+    color: #d5c8ff;
+    margin-bottom: 25px;
+}
+.song-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+.song{
+    background: #211936;
+    border: 1px solid #382950;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.song:hover{
+    transform: translateY(-7px);
+    border-color: #a78bfa;
+}
+.song .song-emoji{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.song h3{
+    margin-bottom: 8px;
+}
+.song p{
+    color: #aaa2bd;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.song a{
+    display: inline-block;
+    background: #8055e8;
+    color: white;
+    text-decoration: none;
+    padding: 9px 17px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.song a:hover{
+    background: #a78bfa;
+    color: #100c20;
+}
+.empty-message{
+    color: #aaa2bd;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+}
+/* About */
+.about{
+    text-align: center;
+    padding: 90px 15%;
+}
+.about p:last-child{
+    color: #bbb4cf;
+    line-height: 2;
+    max-width: 750px;
+    margin: 20px auto;
+}
+/* Footer */
+footer{
+    background: #080611;
+    text-align: center;
+    padding: 35px;
+}
+footer h2{
+    color: #a78bfa;
+    margin-bottom: 8px;
+}
+footer p{
+    color: #aaa2bd;
+    font-size: 13px;
+}
+.copyright{
+    margin-top: 18px;
+    font-size: 11px;
+}
+/* Mobile Responsive */
+@media(max-width: 850px){
+    .mood-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .song-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .music-icon {
+        font-size: 100px;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+@media(max-width: 550px){
+    nav{
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .nav-links{
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links a{
+        margin: 0 8px;
+        font-size: 13px;
+    }
+    .hero{
+        padding: 75px 7%;
+    }
+    .hero h1{
+        font-size: 37px;
+    }
+    .music-icon{
+        display: none;
+    }
+    .mood-container,.song-container{
+        grid-template-columns: 1fr;
+    }
+.section-heading h2,.about h2{
+    font-size: 28px;
+    }
+.about{
+    padding: 65px 8%;
+    }
+}
