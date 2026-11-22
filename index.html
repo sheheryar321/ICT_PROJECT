@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodWave | Feel the Music</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%238055e8'/%3E%3Cpath d='M20 55 V45 A30 30 0 0 1 80 45 V55' fill='none' stroke='white' stroke-width='9' stroke-linecap='round'/%3E%3Crect x='12' y='48' width='20' height='32' rx='9' fill='white'/%3E%3Crect x='68' y='48' width='20' height='32' rx='9' fill='white'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a id="reference" href="http://127.0.0.1:5500/ICT_PROJECT/index.html">
+        <div class="logo">♪ MoodWave</div></a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#moods">Explore</a>
+            <a href="#about">About</a>
+        </div>
+        <a href="#moods" class="nav-button">Find Music</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">YOUR MOOD. YOUR MUSIC.</p>
+            <h1>
+                Feel Every Mood.
+                <br>
+                <span>Find Your Sound.</span>
+            </h1>
+            <p class="hero-text">
+                Music speaks when words cannot.
+                Choose your mood and discover the perfect
+                soundtrack for your moment.
+            </p>
+            <a href="#moods" class="main-button">Explore Music →</a>
+        </div>
+        <div class="music-icon">🎧</div>
+    </section>
+
+    <section class="moods" id="moods">
+
+        <div class="section-heading">
+            <p class="tagline">DISCOVER YOUR SOUND</p>
+            <h2>What's Your <span>Mood?</span></h2>
+            <p>Pick a feeling. We'll find your music.</p>
+        </div>
+        <div class="mood-container">
+            <div class="mood-card happy" onclick="showSongs('Happy')">
+                <div class="emoji">😊</div>
+                <h3>Happy</h3>
+                <p>Feel the good vibes</p>
+            </div>
+
+            <div class="mood-card sad" onclick="showSongs('Sad')">
+                <div class="emoji">🌧️</div>
+                <h3>Sad</h3>
+                <p>Let your feelings out</p>
+            </div>
+
+            <div class="mood-card chill" onclick="showSongs('Chill')">
+                <div class="emoji">🌙</div>
+                <h3>Chill</h3>
+                <p>Relax and unwind</p>
+            </div>
+
+            <div class="mood-card energetic" onclick="showSongs('Energetic')">
+                <div class="emoji">⚡</div>
+                <h3>Energetic</h3>
+                <p>Feel the energy</p>
+            </div>
+
+            <div class="mood-card romantic" onclick="showSongs('Romantic')">
+                <div class="emoji">❤️</div>
+                <h3>Romantic</h3>
+                <p>Feel the love</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendations">
+        <div class="section-heading">
+            <p class="tagline">MADE FOR YOUR MOMENT</p>
+            <h2>Your Music <span>Playlist</span></h2>
+        </div>
+        <h3 id="heading">Select a mood to begin 🎵</h3>
+        <div id="songs" class="song-container">
+            <p class="empty-message">
+                Your recommended songs will appear here.
+            </p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <p class="tagline">ABOUT US</p>
+        <h2>Music for Every <span>Feeling.</span></h2>
+        <p>
+            MoodWave is a music recommendation website
+            designed to help people discover songs according
+            to their current mood. Whether you feel happy,
+            sad, relaxed, energetic or romantic, MoodWave
+            helps you find music for every moment.
+        </p>
+    </section>
+
+    <footer>
+        <h2>♪ MoodWave</h2>
+        <p>Feel the Music. Live the Moment.</p>
+        <p class="copyright">© 2026 MoodWave | ICT Lab Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
